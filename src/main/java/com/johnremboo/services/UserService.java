@@ -8,7 +8,6 @@ import java.util.List;
  * Created by Igor Orekhov on 05.05.17.
  */
 public interface UserService {
-    User findById(Long id);
-    User findByUsername(String username);
+    User loadUserByUsername(String username);
     void createUser(User user);
 }

@@ -8,10 +8,6 @@ import org.springframework.stereotype.Repository;
  */
 @Repository("userDao")
 public class UserDaoImpl extends AbstractDao<Long, User> implements UserDao {
-    @Override
-    public User findById(Long id) {
-        return findOne(id);
-    }
 
     @Override
     public User findByUsername(String username) {
